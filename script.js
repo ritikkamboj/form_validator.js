@@ -6,6 +6,23 @@ const password2=document.getElementById('password2');
 
 
 
+
+//functions
+function showError(input,message)
+{
+    const formControl=input.parentElement;
+    formControl.className="form-control error";
+const small=formControl.querySelector('small');
+small.innerText=message;
+}
+function showSuccess(input)
+{
+    const formControl=input.parentElement;
+    formControl.className='form-control success';
+    
+}
+
+
 //event listeners
 
 form.addEventListener('submit',function(e){
@@ -21,6 +38,7 @@ if(username.value === '')
 }
 else{
     showSuccess(username);
+
 }
 
 // console.log(username);

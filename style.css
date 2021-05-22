@@ -5,7 +5,7 @@
 
 
 :root{
-    --success-color:green;
+    --success-color:rgb(69, 238, 69);
     --error-color:red;
 }
 *{
